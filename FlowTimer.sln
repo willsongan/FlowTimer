@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowTimer", "FlowTimer.csproj", "{07576B01-D4DD-4501-AB88-FE061E6A7941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07576B01-D4DD-4501-AB88-FE061E6A7941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07576B01-D4DD-4501-AB88-FE061E6A7941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07576B01-D4DD-4501-AB88-FE061E6A7941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07576B01-D4DD-4501-AB88-FE061E6A7941}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
