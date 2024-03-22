@@ -3,7 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="App.axaml" value="FlowTimer.csproj" />
         <entry key="Views/MainWindow.axaml" value="FlowTimer.csproj" />
+        <entry key="Views/TimerView.axaml" value="FlowTimer.csproj" />
       </map>
     </option>
   </component>
