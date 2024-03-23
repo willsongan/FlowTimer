@@ -7,10 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/Timer.cs" afterDir="false" />
+    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="Add Timer Model">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/TimerView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimerView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +19,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "willsongan"
+  }
+}]]></component>
   <component name="GitLabMergeRequestsSettings">{}</component>
-  <component name="GithubPullRequestsUISettings">{}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/willsongan/FlowTimer.git",
+    "accountId": "ff05a8b9-b7db-4a50-8c22-ccb874689294"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81d12998a2b0f1d072b9e6edfb2611ade9fd8782e48a547faaedd88587fbc59/ReactiveCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2a429f38cfae242ebe16e4e658a31e3a188d3b79c6e243298c5f81814aacc9/IReactiveObjectExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/ViewModels/TimerViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -93,8 +104,17 @@
       <workItem from="1711109183614" duration="5681000" />
       <workItem from="1711182969831" duration="2001000" />
       <workItem from="1711186049224" duration="767000" />
-      <workItem from="1711186992122" duration="5309000" />
+      <workItem from="1711186992122" duration="8557000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Timer Model">
+      <option name="closed" value="true" />
+      <created>1711192569576</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711192569576</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +135,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Timer Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Timer Model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

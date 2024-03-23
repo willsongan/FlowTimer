@@ -6,13 +6,18 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="FlowTimer.Views.TimerView"
              x:DataType="vm:TimerViewModel">
-    <TextBlock>
-        <TextBlock.Text>
-            <MultiBinding StringFormat="The time is {0} hours {1} minutes {2} seconds">
-                <Binding Path="Timer.Hours" />
-                <Binding Path="Timer.Minutes" />
-                <Binding Path="Timer.Seconds" />
-            </MultiBinding>
-        </TextBlock.Text>
-    </TextBlock>
+    <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto,Auto" Margin="4">
+        <Label Content="Please set your work hour" Grid.Row="0" Grid.Column="0"></Label>
+        <TimePicker ClockIdentifier="24HourClock" Grid.Row="0" Grid.Column="1"></TimePicker>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <TextBlock.Text>
+                <MultiBinding StringFormat="The time is {0} hours {1} minutes {2} seconds">
+                    <Binding Path="Timer.Hours" />
+                    <Binding Path="Timer.Minutes" />
+                    <Binding Path="Timer.Seconds" />
+                </MultiBinding>
+            </TextBlock.Text>
+        </TextBlock>
+    </Grid>
 </UserControl>
