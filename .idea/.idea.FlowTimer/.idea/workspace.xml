@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="" />
+    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/TimerView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimerView.axaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,22 +20,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "willsongan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;willsongan&quot;
   }
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": []
-}]]></component>
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: []
+}</component>
   <component name="GitLabMergeRequestsSettings">{}</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/willsongan/FlowTimer.git",
-    "accountId": "ff05a8b9-b7db-4a50-8c22-ccb874689294"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/willsongan/FlowTimer.git&quot;,
+    &quot;accountId&quot;: &quot;ff05a8b9-b7db-4a50-8c22-ccb874689294&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81d12998a2b0f1d072b9e6edfb2611ade9fd8782e48a547faaedd88587fbc59/ReactiveCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2a429f38cfae242ebe16e4e658a31e3a188d3b79c6e243298c5f81814aacc9/IReactiveObjectExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -146,7 +150,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add Timer Model" />
     <MESSAGE value="Learning Grid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning Grid" />
+    <MESSAGE value="Dynamic FocusTimerButtonCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamic FocusTimerButtonCommand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -154,14 +159,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Views/MainWindow.axaml.cs</url>
           <line>9</line>
-          <properties documentPath="C:\Users\Belut\Documents\GitHub\FlowTimer\Views\MainWindow.axaml.cs" containingFunctionPresentation="Constructor 'MainWindow'">
-            <startOffsets>
-              <option value="162" />
-            </startOffsets>
-            <endOffsets>
-              <option value="163" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Belut\Documents\GitHub\FlowTimer\Views\MainWindow.axaml.cs" containingFunctionPresentation="Constructor 'MainWindow'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

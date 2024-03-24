@@ -25,12 +25,29 @@ public class TimerViewModel : ViewModelBase
             Minutes = 0,
             Seconds = 0
         };
+
+        PlaybackState = PlaybackStateEnum.IsDefault;
+        PlaybackIcon = "▶️";
         
         _dispatcherTimer = new DispatcherTimer(TimeSpan.FromSeconds(1),DispatcherPriority.Normal,Tick);
 
-        SetWorkHourCommand = ReactiveCommand.Create(SetWorkHour);
-        StartFocusCommand = ReactiveCommand.Create(StartFocus);
+        SetWorkTimeCommand = ReactiveCommand.Create(SetWorkTimer);
+        SetFocusTimeCommand = ReactiveCommand.Create(SetFocusTimer);
+        PlaybackCommand = ReactiveCommand.Create(Playback);
+
+        IncrementTimeCommand = ReactiveCommand.Create(IncrementTime,
+            this.WhenAnyValue(x => x.PlaybackState, (state) => state == PlaybackStateEnum.IsPlaying));
+
+        TestCommand = ReactiveCommand.Create(Test);
     }
+
+    public ICommand TestCommand { get; }
+    private void Test()
+    {
+        
+    }
+    
+    
 
     private DispatcherTimer _dispatcherTimer;
     
@@ -62,8 +79,8 @@ public class TimerViewModel : ViewModelBase
         set => this.RaiseAndSetIfChanged(ref _focusTimeSpan, value);
     }
 
-    public ICommand SetWorkHourCommand { get; }
-    private void SetWorkHour()
+    public ICommand SetWorkTimeCommand { get; }
+    private void SetWorkTimer()
     {
         if (WorkTimeSpan == null) return;
         
@@ -75,12 +92,10 @@ public class TimerViewModel : ViewModelBase
             WorkTimeLeft.Seconds = timeSpanValue.Seconds;
         }
     }
-    
-    public ICommand StartFocusCommand { get; }
-    private void StartFocus()
-    {
-       _dispatcherTimer.Start();
 
+    public ICommand SetFocusTimeCommand { get; }
+    private void SetFocusTimer()
+    {
        //set focus timer
        if (FocusTimeSpan == null) return;
        
@@ -93,15 +108,67 @@ public class TimerViewModel : ViewModelBase
        }
     }
 
+    public enum PlaybackStateEnum
+    {
+        IsDefault,
+        IsPlaying,
+        IsPausing
+    }
+
+    private PlaybackStateEnum _playbackState;
+    public PlaybackStateEnum PlaybackState
+    {
+        get => _playbackState;
+        set => this.RaiseAndSetIfChanged(ref _playbackState, value);
+    }
+    private string _playbackIcon;
+    public string PlaybackIcon
+    {
+        get => _playbackIcon;
+        set => this.RaiseAndSetIfChanged(ref _playbackIcon, value);
+    }
+
+    public ICommand PlaybackCommand { get; }
+    private void Playback()
+    {
+        switch (PlaybackState)
+        {
+            case PlaybackStateEnum.IsDefault:
+                _dispatcherTimer.Start();
+                PlaybackIcon = "⏸️";
+                PlaybackState = PlaybackStateEnum.IsPlaying;
+                break;
+            case PlaybackStateEnum.IsPlaying:
+                _dispatcherTimer.Stop();
+                PlaybackIcon = "▶️";
+                PlaybackState = PlaybackStateEnum.IsPausing;
+                break;
+            case PlaybackStateEnum.IsPausing:
+                _dispatcherTimer.Start();
+                PlaybackIcon = "⏸️";
+                PlaybackState = PlaybackStateEnum.IsPlaying;
+                break;
+        }
+    }
+
+    public ICommand IncrementTimeCommand { get; }
+    private void IncrementTime()
+    {
+        if (FocusTimeLeft != null) FocusTimeLeft.Minutes++;
+    }
+
     private void Tick(object? sender, EventArgs e)
     {
-        if (FocusTimeLeft != null)
+        if (FocusTimeLeft != null && WorkTimeLeft != null)
         {
             FocusTimeLeft.Seconds--;
+            WorkTimeLeft.Seconds--;
 
-            if (FocusTimeLeft.HasRanOut)
+            if (FocusTimeLeft.HasRanOut || WorkTimeLeft.HasRanOut)
             {
                 _dispatcherTimer.Stop();
+                PlaybackIcon = "▶️";
+                PlaybackState = PlaybackStateEnum.IsDefault;
             }
         }
     }

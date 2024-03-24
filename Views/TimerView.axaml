@@ -10,7 +10,7 @@
         <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
             <Label Content="Please set your work hour" />
             <TimePicker ClockIdentifier="24HourClock" SelectedTime="{Binding WorkTimeSpan}"/>
-            <Button Command="{Binding SetWorkHourCommand}">Set</Button>
+            <Button Command="{Binding SetWorkTimeCommand}">Set</Button>
         </StackPanel>
         
         <TextBlock Margin="10,10,0,10">
@@ -26,7 +26,7 @@
         <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
             <Label Content="Please set your focus duration" />
             <TimePicker ClockIdentifier="24HourClock" SelectedTime="{Binding FocusTimeSpan}"></TimePicker>
-            <Button Command="{Binding StartFocusCommand}">Start</Button>
+            <Button Command="{Binding SetFocusTimeCommand}">Set</Button>
         </StackPanel>
         
         <TextBlock Margin="10,10,0,10">
@@ -38,5 +38,12 @@
                 </MultiBinding>
             </TextBlock.Text>
         </TextBlock>
+        
+        <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
+            <Button Command="{Binding PlaybackCommand}" Content="{Binding PlaybackIcon}" />
+            <Button Command="{Binding IncrementTimeCommand}">+1</Button>
+        </StackPanel>
+        
+        <Button Command="{Binding TestCommand}" Margin="10,10,0,10">Test</Button>
     </StackPanel>
 </UserControl>
