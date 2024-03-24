@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="Add Timer Model">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/TimerView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimerView.axaml" afterDir="false" />
-    </list>
+    <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +22,9 @@
     "assignee": "willsongan"
   }
 }]]></component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": []
+}]]></component>
   <component name="GitLabMergeRequestsSettings">{}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
@@ -36,6 +36,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81d12998a2b0f1d072b9e6edfb2611ade9fd8782e48a547faaedd88587fbc59/ReactiveCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2a429f38cfae242ebe16e4e658a31e3a188d3b79c6e243298c5f81814aacc9/IReactiveObjectExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/ViewModels/TimerViewModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{}</component>
@@ -104,7 +105,7 @@
       <workItem from="1711109183614" duration="5681000" />
       <workItem from="1711182969831" duration="2001000" />
       <workItem from="1711186049224" duration="767000" />
-      <workItem from="1711186992122" duration="8557000" />
+      <workItem from="1711186992122" duration="8618000" />
     </task>
     <task id="LOCAL-00001" summary="Add Timer Model">
       <option name="closed" value="true" />
@@ -114,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711192569576</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Learning Grid">
+      <option name="closed" value="true" />
+      <created>1711195777780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711195777780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add Timer Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Timer Model" />
+    <MESSAGE value="Learning Grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Learning Grid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
