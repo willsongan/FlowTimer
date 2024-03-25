@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlowTimer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FlowTimer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/TimerView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimerView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
