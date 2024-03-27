@@ -3,8 +3,6 @@
              x:Class="FlowTimer.App"
              xmlns:local="using:FlowTimer"
              xmlns:sty="using:FluentAvalonia.Styling"
-             xmlns:ui="using:FluentAvalonia.UI.Controls"
-             xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
              RequestedThemeVariant="Default">
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 

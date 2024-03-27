@@ -2,6 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
              xmlns:vm="using:FlowTimer.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="FlowTimer.Views.TimerView"
@@ -9,10 +11,10 @@
     <StackPanel>
         <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
             <Label Content="Please set your work hour" />
-            <TimePicker ClockIdentifier="24HourClock" SelectedTime="{Binding WorkTimeSpan}"/>
+            <TimePicker ClockIdentifier="24HourClock" SelectedTime="{Binding WorkTimeSpan}" />
             <Button Command="{Binding SetWorkTimeCommand}">Set</Button>
         </StackPanel>
-        
+
         <TextBlock Margin="10,10,0,10">
             <TextBlock.Text>
                 <MultiBinding StringFormat="Your work time is {0} hours {1} minutes {2} seconds left">
@@ -25,10 +27,10 @@
 
         <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
             <Label Content="Please set your focus duration" />
-            <TimePicker ClockIdentifier="24HourClock"  SelectedTime="{Binding FocusTimeSpan}"></TimePicker>
+            <TimePicker ClockIdentifier="24HourClock" SelectedTime="{Binding FocusTimeSpan}"></TimePicker>
             <Button Command="{Binding SetFocusTimeCommand}">Set</Button>
         </StackPanel>
-        
+
         <TextBlock Margin="10,10,0,10">
             <TextBlock.Text>
                 <MultiBinding StringFormat="Your focus time is {0} hours {1} minutes {2} seconds left">
@@ -38,12 +40,13 @@
                 </MultiBinding>
             </TextBlock.Text>
         </TextBlock>
-        
+
         <StackPanel Orientation="Horizontal" Margin="10,10,0,10">
-            <Button Command="{Binding PlaybackCommand}" Content="{Binding PlaybackIcon}" />
+            <Button Command="{Binding PlaybackCommand}">
+                <ui:SymbolIcon Symbol="{Binding PlaybackIcon}"></ui:SymbolIcon>
+            </Button>
             <Button Command="{Binding IncrementTimeCommand}">+1</Button>
         </StackPanel>
-        
-        <Button Command="{Binding TestCommand}" Margin="10,10,0,10">Test</Button>
+
     </StackPanel>
 </UserControl>

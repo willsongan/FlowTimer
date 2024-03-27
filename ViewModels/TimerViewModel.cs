@@ -2,6 +2,7 @@ using System;
 using System.Windows.Input;
 using Avalonia.Threading;
 using FlowTimer.Models;
+using FluentAvalonia.UI.Controls;
 using ReactiveUI;
 
 namespace FlowTimer.ViewModels;
@@ -27,7 +28,7 @@ public class TimerViewModel : ViewModelBase
         };
 
         PlaybackState = PlaybackStateEnum.IsDefault;
-        PlaybackIcon = "▶️";
+        PlaybackIcon = Symbol.Play;
         
         _dispatcherTimer = new DispatcherTimer(TimeSpan.FromSeconds(1),DispatcherPriority.Normal,Tick);
 
@@ -121,8 +122,8 @@ public class TimerViewModel : ViewModelBase
         get => _playbackState;
         set => this.RaiseAndSetIfChanged(ref _playbackState, value);
     }
-    private string _playbackIcon;
-    public string PlaybackIcon
+    private Symbol _playbackIcon;
+    public Symbol PlaybackIcon
     {
         get => _playbackIcon;
         set => this.RaiseAndSetIfChanged(ref _playbackIcon, value);
@@ -135,17 +136,17 @@ public class TimerViewModel : ViewModelBase
         {
             case PlaybackStateEnum.IsDefault:
                 _dispatcherTimer.Start();
-                PlaybackIcon = "⏸️";
+                PlaybackIcon = Symbol.Pause;
                 PlaybackState = PlaybackStateEnum.IsPlaying;
                 break;
             case PlaybackStateEnum.IsPlaying:
                 _dispatcherTimer.Stop();
-                PlaybackIcon = "▶️";
+                PlaybackIcon = Symbol.Play;
                 PlaybackState = PlaybackStateEnum.IsPausing;
                 break;
             case PlaybackStateEnum.IsPausing:
                 _dispatcherTimer.Start();
-                PlaybackIcon = "⏸️";
+                PlaybackIcon = Symbol.Pause;
                 PlaybackState = PlaybackStateEnum.IsPlaying;
                 break;
         }
@@ -167,7 +168,7 @@ public class TimerViewModel : ViewModelBase
             if (FocusTimeLeft.HasRanOut || WorkTimeLeft.HasRanOut)
             {
                 _dispatcherTimer.Stop();
-                PlaybackIcon = "▶️";
+                PlaybackIcon = Symbol.Play;
                 PlaybackState = PlaybackStateEnum.IsDefault;
             }
         }

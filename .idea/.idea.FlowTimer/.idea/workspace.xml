@@ -10,7 +10,9 @@
     <list default="true" id="c5118728-ec17-42e8-8a2c-4d93c6ec3988" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowTimer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FlowTimer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/TimerViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/TimerView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimerView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +40,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81d12998a2b0f1d072b9e6edfb2611ade9fd8782e48a547faaedd88587fbc59/ReactiveCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e2a429f38cfae242ebe16e4e658a31e3a188d3b79c6e243298c5f81814aacc9/IReactiveObjectExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/ViewModels/TimerViewModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Belut/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5feb870646a4450b9ec32560a750dd5b35ee60/6d/e8f716a9/SoundPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5feb870646a4450b9ec32560a750dd5b35ee60/76/a73f987c/SystemSound.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8dc92d75fd17446197100c45cba8205f3dd200/ff/91b656c8/Symbol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/App.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/TimerView.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -153,17 +156,5 @@
     <MESSAGE value="Learning Grid" />
     <MESSAGE value="Dynamic FocusTimerButtonCommand" />
     <option name="LAST_COMMIT_MESSAGE" value="Dynamic FocusTimerButtonCommand" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Views/MainWindow.axaml.cs</url>
-          <line>9</line>
-          <properties documentPath="C:\Users\Belut\Documents\GitHub\FlowTimer\Views\MainWindow.axaml.cs" containingFunctionPresentation="Constructor 'MainWindow'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
