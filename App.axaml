@@ -15,4 +15,8 @@
     <Application.Styles>
         <sty:FluentAvaloniaTheme/>
     </Application.Styles>
+             
+    <Application.Resources>
+        <SolidColorBrush x:Key="NavigationViewDefaultPaneBackgroundSolidColorBrush" Color="red"></SolidColorBrush>
+    </Application.Resources>
 </Application>

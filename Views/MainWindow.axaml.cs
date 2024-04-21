@@ -13,5 +13,6 @@ public partial class MainWindow : AppWindow
     private void InitializeSettings()
     {
         TitleBar.ExtendsContentIntoTitleBar = true;
+        TitleBar.TitleBarHitTestType = TitleBarHitTestType.Complex;
     }
 }

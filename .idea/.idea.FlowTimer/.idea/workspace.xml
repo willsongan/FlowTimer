@@ -7,13 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0324c52b-d4f9-4a9c-b7c4-445852b33b95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/avalonia.xml" afterDir="false" />
+    <list default="true" id="0324c52b-d4f9-4a9c-b7c4-445852b33b95" name="Changes" comment="Using FluentAvalonia Theme">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlowTimer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowTimer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FlowTimer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml.cs" afterDir="false" />
     </list>
@@ -30,12 +26,16 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5feb870646a4450b9ec32560a750dd5b35ee60/76/a73f987c/SystemSound.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8dc92d75fd17446197100c45cba8205f3dd200/ff/91b656c8/Symbol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1477ccdfd3891cd83764086b09070c048c2d2f1f2c5a3fa54a1e69839c1a7/TimePicker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/467b2995bee85ab213fc389aa8c14a8532f86d49176fb439d39e3754253ba/NavigationViewItem.properties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6bfdc36fc0f8ca1f4f58a06a17afd3334cb1ac50cd6893439f4add9f33cb034/IconSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9b699722324e3615b57977447b25bf953fccb2d6e912ae584f16b7e691ad9d3/Panel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c2f6475524d844411f342ebac3dc9fdcc985293c63097183568b465a768cd5/StackPanel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/App.axaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/App.axaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Models/Timer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Models/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/MainWindow.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/MainWindow.axaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/willsongan/Documents/GitHub/FlowTimer/Views/MainWindow.axaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -100,8 +100,18 @@
       <option name="presentableId" value="Default" />
       <updated>1713079170051</updated>
       <workItem from="1713079172788" duration="666000" />
-      <workItem from="1713119251629" duration="1204000" />
+      <workItem from="1713119251629" duration="2043000" />
+      <workItem from="1713696235564" duration="7799000" />
     </task>
+    <task id="LOCAL-00001" summary="Using FluentAvalonia Theme">
+      <option name="closed" value="true" />
+      <created>1713123112106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713123112106</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +119,31 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Initial" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Using FluentAvalonia Theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using FluentAvalonia Theme" />
   </component>
 </project>
